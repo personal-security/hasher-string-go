@@ -10,11 +10,14 @@ func main() {
 
 	var text string
 
-	fmt.Print("Enter text for hash: ")
-	fmt.Scanf("%s", &text)
+	for {
+		fmt.Print("Enter text for hash: ")
+		fmt.Scanf("%s", &text)
 
-	hashResult := md5.Sum([]byte(text))
+		hashResult := md5.Sum([]byte(text))
 
-	hashResultString := hex.EncodeToString(hashResult[:])
-	fmt.Println(hashResultString)
+		hashResultString := hex.EncodeToString(hashResult[:])
+		fmt.Println(hashResultString)
+		fmt.Println()
+	}
 }
