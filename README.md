@@ -1,5 +1,5 @@
 # hasher-string-go
-fast hash string from console
+Faster hash string generator from console
 
 Compile
 
